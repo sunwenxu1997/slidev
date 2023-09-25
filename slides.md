@@ -1,68 +1,31 @@
 ---
-theme: seriph
-background: https://source.unsplash.com/collection/94734566/1920x1080
-class: text-center
-highlighter: shiki
-lineNumbers: false
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-drawings:
-  persist: false
-transition: slide-left
-title: Welcome to Slidev
-mdc: true
+src: ./pages/home-page.md
+hide: false
 ---
-
-# Welcome to Slidev
-
-Presentation slides for developers
-
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
-<div class="abs-br m-6 flex gap-2">
-  <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-    class="text-xl slidev-icon-btn opacity-50 !border-none !hover:text-white">
-    <carbon-logo-github />
-  </a>
-</div>
-
-<!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
 
 ---
 transition: fade-out
 ---
 
-# What is Slidev?
+# 什么是 Slidev?
 
-Slidev is a slides maker and presenter designed for developers, consist of the following features
+Slidev是一个为开发人员设计的幻灯片制作和演示器，包括以下功能
 
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - theme can be shared and used with npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embedding Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export into PDF, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - anything possible on a webpage
+- 📝 **Text-based** - 将重点放在Markdown的内容上，然后再对它们进行样式化
+- 🎨 **Themable** - 主题可以与NPM包共享和使用
+- 🧑‍💻 **Developer Friendly** - 代码高亮显示，实时编码与自动完成
+- 🤹 **Interactive** - 嵌入Vue组件来增强表达式
+- 🎥 **Recording** - 内置录音和相机视图
+- 📤 **Portable** - 导出为PDF, png，甚至可托管的SPA
+- 🛠 **Hackable** - 网页上任何可能的东西
 
 <br>
 <br>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
+阅读更多关于[为什么使用Slidev?](https://sli.dev/guide/why)
 
 <!--
-You can have `style` tag in markdown to override the style for the current page.
+您可以在markdown中使用“style”标签来覆盖当前页面的样式。
 Learn more: https://sli.dev/guide/syntax#embedded-styles
 -->
 
@@ -79,14 +42,17 @@ h1 {
 </style>
 
 <!--
-Here is another comment.
+每一页的最后的注释或评论部分都可以在演讲模式下只针对你个人展示出来
 -->
 
 ---
 layout: default
+transition: slide-left
 ---
 
-# Table of contents
+# 目录表
+
+Toc组件可以自动生成目录表，[了解更多](https://cn.sli.dev/builtin/components.html#toc)
 
 ```html
 <Toc minDepth="1" maxDepth="1"></Toc>
@@ -99,20 +65,21 @@ transition: slide-up
 level: 2
 ---
 
-# Navigation
+# 导航栏
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/navigation.html)
+将鼠标悬停在左下角以查看导航的控制面板, [learn more](https://cn.sli.dev/guide/navigation.html)
 
-### Keyboard Shortcuts
+### 键盘快捷键
 
 |     |     |
 | --- | --- |
 | <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
 | <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |
+| <kbd>up</kbd> | previous slide |m
 | <kbd>down</kbd> | next slide |
 
-<!-- https://sli.dev/guide/animations.html#click-animations -->
+<!-- 点击动画
+ https://cn.sli.dev/guide/animations.html#click-animations -->
 <img
   v-click
   class="absolute -bottom-9 -left-7 w-80 opacity-50"
@@ -125,9 +92,9 @@ layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
-# Code
+# 代码片段
 
-Use code snippets and get the highlighting directly![^1]
+使用代码片段并直接获得高亮显示![^1]
 
 ```ts {all|2|1-6|9|all}
 interface User {
@@ -146,7 +113,7 @@ function updateUser(id: number, update: User) {
 
 <arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
 
-[^1]: [Learn More](https://sli.dev/guide/syntax.html#line-highlighting)
+[^1]: [Learn More](https://cn.sli.dev/guide/syntax.html#line-highlighting)
 
 <style>
 .footnotes-sep {
@@ -162,14 +129,14 @@ function updateUser(id: number, update: User) {
 
 ---
 
-# Components
+# 组件
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-You can use Vue components directly inside your slides.
+您可以直接在幻灯片中使用Vue组件。
 
-We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that you can use directly. And adding your custom components is also super easy.
+我们提供了一些内置组件，如 `<Tweet/>` 和 `<Youtube/>` 您可以直接使用。添加自定义组件也非常容易。
 
 ```html
 <Counter :count="10" />
@@ -178,7 +145,7 @@ We have provided a few built-in components like `<Tweet/>` and `<Youtube/>` that
 <!-- ./components/Counter.vue -->
 <Counter :count="10" m="t-4" />
 
-Check out [the guides](https://sli.dev/builtin/components.html) for more.
+Check out [the guides](https://cn.sli.dev/builtin/components.html) for more.
 
 </div>
 <div>
@@ -207,9 +174,9 @@ Also, HTML elements are valid:
 class: px-20
 ---
 
-# Themes
+# 主题
 
-Slidev comes with powerful theming support. Themes can provide styles, layouts, components, or even configurations for tools. Switching between themes by just **one edit** in your frontmatter:
+Slidev具有强大的主题支持。主题可以为工具提供样式、布局、组件甚至配置。在主题之间切换只需**one edit**在你的frontmatter:
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
@@ -231,8 +198,8 @@ theme: seriph
 
 </div>
 
-Read more about [How to use a theme](https://sli.dev/themes/use.html) and
-check out the [Awesome Themes Gallery](https://sli.dev/themes/gallery.html).
+了解 [如何使用主题](https://cn.sli.dev/themes/use.html) 和
+查看 [很棒的主题图库](https://cn.sli.dev/themes/gallery.html).
 
 ---
 preload: false
@@ -432,3 +399,7 @@ class: text-center
 # Learn More
 
 [Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+
+---
+src: ./pages/end-page.md
+---
