@@ -1,6 +1,6 @@
-# Multiple Entries
+# 多个入口点
 
-You can split your slides.md into multiple files and organize them as you want using the `src` attribute.
+你可以拆分幻灯片。使用' src '属性将它们组织成多个文件。
 
 #### `slides.md`
 
@@ -24,4 +24,4 @@ src: ./subpage.md
 Page 2 from another file.
 ```
 
-[Learn more](https://sli.dev/guide/syntax.html#multiple-entries)
+[了解更多](https://cn.sli.dev/guide/syntax.html#multiple-entries)

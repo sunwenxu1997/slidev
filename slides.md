@@ -205,7 +205,7 @@ theme: seriph
 preload: false
 ---
 
-# Animations
+# 动画
 
 Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
 
@@ -252,7 +252,7 @@ Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
   </div>
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
+<!-- Vue脚本设置脚本可以直接在markdown中使用，并且只会影响当前页面 -->
 <script setup lang="ts">
 const final = {
   x: 0,
@@ -308,9 +308,9 @@ $$
 
 ---
 
-# Diagrams
+# 图表
 
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
+您可以直接在Markdown中从文本描述创建图表/图形。
 
 <div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
 
@@ -384,7 +384,7 @@ database "MySql" {
 
 </div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+[了解更多](https://cn.sli.dev/guide/syntax.html#diagrams)
 
 ---
 src: ./pages/multiple-entries.md
@@ -398,7 +398,7 @@ class: text-center
 
 # Learn More
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+[文档](https://cn.sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [案例展示](https://cn.sli.dev/showcases.html)
 
 ---
 src: ./pages/end-page.md
