@@ -5,8 +5,8 @@ theme: default
 # 提供的精美壁纸 https://source.unsplash.com/collection/94734566/1920x1080
 # background: /pubilc/page1.jpg
 class: content-end text-left
-highlighter: shiki
-lineNumbers: false
+highlighter: prism 
+lineNumbers: true
 routerMode: hash
 drawings:
   persist: false
@@ -14,14 +14,14 @@ transition: slide-left
 mdc: true
 ---
 
-# PPT文档 演示标题
+# GithubCopilot
 
-Document presentation report
+开发效率提升工具
 
-<div class="pb-10">
-  <span @click="$slidev.nav.next" class="py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">请按空格键查看下一页 <carbon:arrow-right class="inline"/>
+<!-- <div class="pb-10">
+  <span @click="$slidev.nav.next" class="py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10"> <carbon:arrow-right class="inline"/>
   </span>
-</div>
+</div> -->
 
 <!--
 每张幻灯片的最后一个注释块将被视为幻灯片注释。它将在演示者模式下与幻灯片一起显示和编辑。 [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
@@ -36,407 +36,168 @@ p{
     text-transform:uppercase;
 }
 </style>
-<!-- 
+<!--
 * 最后部分的注释可以在演讲模式下只针对你个人展示出来
 * 没错，是这样的
 -->
-
----
-transition: fade-out
 ---
 
-# 什么是 Slidev?
+# 
+##
 
-Slidev是一个为开发人员设计的幻灯片制作和演示器，包括以下功能
+GitHub的首席执行官 [Thomas](https://github.blog/author/ashtom/) 在 **2022年6月21日** ，首次将 **Github Copilot** 面向个人开发者全面开放的公告。
 
-- 📝 **Text-based** - 将重点放在Markdown的内容上，然后再对它们进行样式化
-- 🎨 **Themable** - 主题可以与NPM包共享和使用
-- 🧑‍💻 **Developer Friendly** - 代码高亮显示，实时编码与自动完成
-- 🤹 **Interactive** - 嵌入Vue组件来增强表达式
-- 🎥 **Recording** - 内置录音和相机视图
-- 📤 **Portable** - 导出为PDF, png，甚至可托管的SPA
-- 🛠 **Hackable** - 网页上任何可能的东西
-
-<br>
-<br>
-
-阅读更多关于[为什么使用Slidev?](https://sli.dev/guide/why)
-
+<img src="/pubilc/1704691680302.jpg" class="m-auto mt-5 h-95">
 <!--
 您可以在markdown中使用“style”标签来覆盖当前页面的样式。
 Learn more: https://sli.dev/guide/syntax#embedded-styles
 -->
 
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
 <!--
 每一页的最后的注释或评论部分都可以在演讲模式下只针对你个人展示出来
 -->
-
----
-layout: default
-transition: slide-left
 ---
 
-# 目录表
 
-Toc组件可以自动生成目录表，[了解更多](https://cn.sli.dev/builtin/components.html#toc)
+# 什么是 Github Copilot
+##
+<img src="/pubilc/1704698345259.jpg" class="h-80 m-auto my-10">
 
-```html
-<Toc minDepth="1" maxDepth="1"></Toc>
-```
+<v-click>
 
-<Toc maxDepth="1"></Toc>
+简单来说就是能帮助程序员提高代码方面的开发效率，完全展示了作为副驾驶员 ( **copilot** ) 的导航，协助的能力。
+
+</v-click>
+---
+transition: slide-up
+---
+
+
+# 如何使用 Copilot
+
+##
+
+目前 `Github Copilot`是收费的😔，对于个人开发用户也是个不小的开销。当然`Github Copilot`也提供了30天的免费试用体验😊，前提是你需要绑定 **信用卡** 或者 **PayPal**。
+
+<img src="/pubilc/1704700226543.jpg" class="w-1/2 m-auto mt-10">
+
+---
+
+# 
+##
+🎉开通成功后，基于`VS Code工具`来讲的话。
+
+1.直接登录已开通绑定的github账号；
+
+2.在扩展市场下载对应的`Github Copilot` 插件；
+
+3.等待右下角机器人🤖小图标正常显示时就能使用了。
+
+<img src="/pubilc/1704702605209.jpg" class="h-80 m-auto">
 
 ---
 transition: slide-up
-level: 2
+layout: two-cols
 ---
 
-# 导航栏
+# Copilot 自动化代码生成
 
-将鼠标悬停在左下角以查看导航的控制面板, [learn more](https://cn.sli.dev/guide/navigation.html)
+简单实现一个案例：点击按钮随机更换背景颜色
+<img src="/pubilc/button.gif" class="m-auto mt-5 h-100">
 
-### 键盘快捷键
+::right::
 
-|     |     |
-| --- | --- |
-| <kbd>right</kbd> / <kbd>space</kbd>| next animation or slide |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd> | previous slide |m
-| <kbd>down</kbd> | next slide |
-
-<!-- 点击动画
- https://cn.sli.dev/guide/animations.html#click-animations -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
-
----
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
-
-# 代码片段
-
-使用代码片段并直接获得高亮显示![^1]
-
-```ts {all|2|1-6|9|all}
-interface User {
-  id: number
-  firstName: string
-  lastName: string
-  role: string
-}
-
-function updateUser(id: number, update: User) {
-  const user = getUser(id)
-  const newUser = { ...user, ...update }
-  saveUser(id, newUser)
-}
-```
-
-<arrow v-click="[3, 4]" x1="400" y1="420" x2="230" y2="330" color="#564" width="3" arrowSize="1" />
-
-[^1]: [Learn More](https://cn.sli.dev/guide/syntax.html#line-highlighting)
-
-<style>
-.footnotes-sep {
-  @apply mt-20 opacity-10;
-}
-.footnotes {
-  @apply text-sm opacity-75;
-}
-.footnote-backref {
-  display: none;
-}
-</style>
-
----
-
-# 组件
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-您可以直接在幻灯片中使用Vue组件。
-
-我们提供了一些内置组件，如 `<Tweet/>` 和 `<Youtube/>` 您可以直接使用。添加自定义组件也非常容易。
-
-```html
-<Counter :count="10" />
-```
-
-<!-- ./components/Counter.vue -->
-<Counter :count="10" m="t-4" />
-
-Check out [the guides](https://cn.sli.dev/builtin/components.html) for more.
-
-</div>
-<div>
-
-```html
-<Tweet id="1390115482657726468" />
-```
-
-<Tweet id="1390115482657726468" scale="0.65" />
-
-</div>
-</div>
-
-<!--
-Presenter note with **bold**, *italic*, and ~~striked~~ text.
-
-Also, HTML elements are valid:
-<div class="flex w-full">
-  <span style="flex-grow: 1;">Left content</span>
-  <span>Right content</span>
-</div>
--->
-
-
----
-class: px-20
----
-
-# 主题
-
-Slidev具有强大的主题支持。主题可以为工具提供样式、布局、组件甚至配置。在主题之间切换只需**one edit**在你的frontmatter:
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-```yaml
----
-theme: default
----
-```
-
-```yaml
----
-theme: seriph
----
-```
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-default/01.png?raw=true">
-
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
-
-</div>
-
-了解 [如何使用主题](https://cn.sli.dev/themes/use.html) 和
-查看 [很棒的主题图库](https://cn.sli.dev/themes/gallery.html).
-
----
-preload: false
----
-
-# 动画
-
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
-
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
-
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
+<div class="code">
+```html {all|1,11,22,28,36,43,44|all}
+<!-- 生成一个垂直水平居中的按钮 -->
+<template>
+  <div class="other">
+    <div class="btn" @click="changeColor">
+      <div class="btn-inner">
+        <div class="btn-inner-inner">按钮</div>
+      </div>
+    </div>
   </div>
-
-  <div
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    
-  </div>
-</div>
-
-<!-- Vue脚本设置脚本可以直接在markdown中使用，并且只会影响当前页面 -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
+</template>
+<!-- 给按钮添加一个点击事件，每次点击按钮，背景颜色就会随机改变 -->
+<script>
+export default {
+  data() {
+    return {
+      color: '#fff'
+    }
+  },
+  methods: {
+    changeColor() {
+      this.color = '#' + Math.floor(Math.random() * 0xffffff).toString(16)
+      // 背景颜色改变
+      this.$el.style.backgroundColor = this.color
+    }
   }
 }
 </script>
-
-<div
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-
-[Learn More](https://sli.dev/guide/animations.html#motion)
-
-</div>
-
-
----
-
-# LaTeX
-
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
-
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$ {1|3|all}
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# 图表
-
-您可以直接在Markdown中从文本描述创建图表/图形。
-
-<div class="grid grid-cols-4 gap-5 pt-4 -mb-6">
-
-```mermaid {scale: 0.5}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
-
-```mermaid
-mindmap
-  root((mindmap))
-    Origins
-      Long history
-      ::icon(fa fa-book)
-      Popularisation
-        British popular psychology author Tony Buzan
-    Research
-      On effectivness<br/>and features
-      On Automatic creation
-        Uses
-            Creative techniques
-            Strategic planning
-            Argument mapping
-    Tools
-      Pen and paper
-      Mermaid
-```
-
-```plantuml {scale: 0.7}
-@startuml
-
-package "Some Group" {
-  HTTP - [First Component]
-  [Another Component]
-}
-
-node "Other Groups" {
-  FTP - [Second Component]
-  [First Component] --> FTP
-}
-
-cloud {
-  [Example 1]
-}
-
-
-database "MySql" {
-  folder "This is my folder" {
-    [Folder 3]
-  }
-  frame "Foo" {
-    [Frame 4]
+<!-- 样式部分 -->
+<style lang="scss" scoped>
+.other {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .btn {
+    width: 200px;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    cursor: pointer;
+    user-select: none;
+    .btn-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .btn-inner-inner {
+        font-size: 20px;
+      }
+    }
   }
 }
-
-
-[Another Component] --> [Example 1]
-[Example 1] --> [Folder 3]
-[Folder 3] --> [Frame 4]
-
-@enduml
+</style>
 ```
-
 </div>
 
-[了解更多](https://cn.sli.dev/guide/syntax.html#diagrams)
+<style>
+  .code{
+    height:31rem;
+    overflow: auto;
+  }
+</style>
+<!-- 
+让我们看下下面代码中哪些是通过copilot生成的
+ -->
 
 ---
-src: ./pages/multiple-entries.md
-hide: false
----
+
+# 注释生成
+##
+通过编写注释，根据注释内容自动生成代码。
+* 多用于简单js方法生成
+* 简单的css布局样式等
+
+<img src="/pubilc/code1.gif" class="m-auto mt-5 h-70">
 
 ---
-layout: center
-class: text-center
----
 
-# Learn More
+# 自动填充生成
+##
+Copilot可以结合当前项目上下文，编写时会提前帮你 **预测** 出你想要的代码。
+* 编写上半段代码，帮你生成下半段代码，节省 **55%** 的时间；
+* 尤其是在你可能不擅长的领域，这种 **预测** 方式，可以优先帮你生成代码，然后你再去学习代码。(经常会给人一种意想不到的效果😮)
+<img src="/pubilc/code2.gif" class="m-auto mt-5 h-60">
 
-[文档](https://cn.sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [案例展示](https://cn.sli.dev/showcases.html)
 
 ---
 src: ./pages/end-page.md
