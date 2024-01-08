@@ -18,15 +18,6 @@ mdc: true
 
 开发效率提升工具
 
-<!-- <div class="pb-10">
-  <span @click="$slidev.nav.next" class="py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10"> <carbon:arrow-right class="inline"/>
-  </span>
-</div> -->
-
-<!--
-每张幻灯片的最后一个注释块将被视为幻灯片注释。它将在演示者模式下与幻灯片一起显示和编辑。 [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
--->
-
 <style>
 .slidev-layout.slidev-page-1 {
   background-image:url("/pubilc/page1.jpg") !important;
@@ -40,6 +31,7 @@ p{
 * 最后部分的注释可以在演讲模式下只针对你个人展示出来
 * 没错，是这样的
 -->
+
 ---
 
 # 
@@ -49,15 +41,10 @@ GitHub的首席执行官 [Thomas](https://github.blog/author/ashtom/) 在 **2022
 
 <img src="/pubilc/1704691680302.jpg" class="m-auto mt-5 h-95">
 <!--
-您可以在markdown中使用“style”标签来覆盖当前页面的样式。
-Learn more: https://sli.dev/guide/syntax#embedded-styles
+您可以在markdown中使用“style”标签来覆盖当前页面的样式
 -->
 
-<!--
-每一页的最后的注释或评论部分都可以在演讲模式下只针对你个人展示出来
--->
 ---
-
 
 # 什么是 Github Copilot
 ##
@@ -68,10 +55,10 @@ Learn more: https://sli.dev/guide/syntax#embedded-styles
 简单来说就是能帮助程序员提高代码方面的开发效率，完全展示了作为副驾驶员 ( **copilot** ) 的导航，协助的能力。
 
 </v-click>
+
 ---
 transition: slide-up
 ---
-
 
 # 如何使用 Copilot
 
