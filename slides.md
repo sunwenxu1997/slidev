@@ -1,17 +1,16 @@
 ---
-# 主题选择
 theme: default
-# 首页背景图片
-# 提供的精美壁纸 https://source.unsplash.com/collection/94734566/1920x1080
-# background: /pubilc/page1.jpg
 class: content-end text-left
-highlighter: prism 
+highlighter: prism
 lineNumbers: true
 routerMode: hash
 drawings:
   persist: false
 transition: slide-left
 mdc: true
+download: true
+exportFilename: exported.pdf
+title: GithubCopilot
 ---
 
 # GithubCopilot
@@ -27,9 +26,9 @@ p{
     text-transform:uppercase;
 }
 </style>
+
 <!--
-* 最后部分的注释可以在演讲模式下只针对你个人展示出来
-* 没错，是这样的
+* 大家好，今天来的各位应该都是开发的同事，然后今天的主题是copilot，相信有的同事用过，有的没用过。这里就先简单讲一下copilot的由来
 -->
 
 ---
@@ -40,8 +39,9 @@ p{
 GitHub的首席执行官 [Thomas](https://github.blog/author/ashtom/) 在 **2022年6月21日** ，首次将 **Github Copilot** 面向个人开发者全面开放的公告。
 
 <img src="/pubilc/1704691680302.jpg" class="m-auto mt-5 h-95">
+
 <!--
-您可以在markdown中使用“style”标签来覆盖当前页面的样式
+这是托马斯在2022年6月21日发布的一则公告。大概意思就是顺应ai时代的到来，方方面面都受益于了大家，但是代码方面还以就是手动编写，不够完全智能，所以推出了copilot提供给开发人员，提高各位的开发效率。
 -->
 
 ---
@@ -55,6 +55,13 @@ GitHub的首席执行官 [Thomas](https://github.blog/author/ashtom/) 在 **2022
 简单来说就是能帮助程序员提高代码方面的开发效率，完全展示了作为副驾驶员 ( **copilot** ) 的导航，协助的能力。
 
 </v-click>
+
+<!--
+copilot有3大特点。
+1.提供相匹配的代码编写建议；
+2.大多开发者工具的兼容；
+3.涉及领域广，尤其是在你不擅长的领域，也能帮你提供代码建议。
+-->
 
 ---
 transition: slide-up
@@ -162,9 +169,11 @@ export default {
     overflow: auto;
   }
 </style>
-<!-- 
-让我们看下下面代码中哪些是通过copilot生成的
- -->
+
+<!--
+这里给大家展示一个小案例。
+先看下代码量，差不多57行代码，也不是特别复杂的功能。让我们看下下面代码中哪些是通过copilot生成的。没错高亮的7行部分是我写的，其余50行全部是copilot建议生成的。占比很是惊人。怪不得copilot能说提升55%的效率。
+-->
 
 ---
 
