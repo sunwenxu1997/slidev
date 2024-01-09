@@ -19,7 +19,7 @@ title: GithubCopilot
 
 <style>
 .slidev-layout.slidev-page-1 {
-  background-image:url("/pubilc/page1.jpg") !important;
+  background-image:url("/page1.jpg") !important;
   color: #5a5a5a !important;
 }
 p{
@@ -38,7 +38,7 @@ p{
 
 GitHub的首席执行官 [Thomas](https://github.blog/author/ashtom/) 在 **2022年6月21日** ，首次将 **Github Copilot** 面向个人开发者全面开放的公告。
 
-<img src="/pubilc/1704691680302.jpg" class="m-auto mt-5 h-95">
+<img src="/1704691680302.jpg" class="m-auto mt-5 h-95">
 
 <!--
 这是托马斯在2022年6月21日发布的一则公告。大概意思就是顺应ai时代的到来，方方面面都受益于了大家，但是代码方面还以就是手动编写，不够完全智能，所以推出了copilot提供给开发人员，提高各位的开发效率。
@@ -48,7 +48,7 @@ GitHub的首席执行官 [Thomas](https://github.blog/author/ashtom/) 在 **2022
 
 # 什么是 Github Copilot
 ##
-<img src="/pubilc/1704698345259.jpg" class="h-80 m-auto my-10">
+<img src="/1704698345259.jpg" class="h-80 m-auto my-10">
 
 <v-click>
 
@@ -73,7 +73,7 @@ transition: slide-up
 
 目前 `Github Copilot`是收费的😔，对于个人开发用户也是个不小的开销。当然`Github Copilot`也提供了30天的免费试用体验😊，前提是你需要绑定 **信用卡** 或者 **PayPal**。
 
-<img src="/pubilc/1704700226543.jpg" class="w-1/2 m-auto mt-10">
+<img src="/1704700226543.jpg" class="w-1/2 m-auto mt-10">
 
 ---
 
@@ -87,7 +87,7 @@ transition: slide-up
 
 3.等待右下角机器人🤖小图标正常显示时就能使用了。
 
-<img src="/pubilc/1704702605209.jpg" class="h-80 m-auto">
+<img src="/1704702605209.jpg" class="h-80 m-auto">
 
 ---
 transition: slide-up
@@ -97,7 +97,7 @@ layout: two-cols
 # Copilot 自动化代码生成
 
 简单实现一个案例：点击按钮随机更换背景颜色
-<img src="/pubilc/button.gif" class="m-auto mt-5 h-100">
+<img src="/button.gif" class="m-auto mt-5 h-100">
 
 ::right::
 
@@ -183,7 +183,7 @@ export default {
 * 多用于简单js方法生成
 * 简单的css布局样式等
 
-<img src="/pubilc/code1.gif" class="m-auto mt-5 h-70">
+<img src="/code1.gif" class="m-auto mt-5 h-70">
 
 ---
 
@@ -192,7 +192,7 @@ export default {
 Copilot可以结合当前项目上下文，编写时会提前帮你 **预测** 出你想要的代码。
 * 编写上半段代码，帮你生成下半段代码，节省 **55%** 的时间；
 * 尤其是在你可能不擅长的领域，这种 **预测** 方式，可以优先帮你生成代码，然后你再去学习代码。(经常会给人一种意想不到的效果😮)
-<img src="/pubilc/code2.gif" class="m-auto mt-5 h-60">
+<img src="/code2.gif" class="m-auto mt-5 h-60">
 
 ---
 
@@ -200,7 +200,7 @@ Copilot可以结合当前项目上下文，编写时会提前帮你 **预测** �
 ##
 可基于当前项目帮你 分析代码问题，生成代码，优化代码，测试代码等，拥有一个强劲的 **在线云助手** (需要梯子加速)
 <div class="flex">
-<img src="/pubilc/1704770992299.jpg" class="m-auto h-110">
+<img src="/1704770992299.jpg" class="m-auto h-110">
 </div>
 ---
 
@@ -211,8 +211,8 @@ Copilot可以结合当前项目上下文，编写时会提前帮你 **预测** �
 通过Copilot自动结合上下文生成相关规范代码，也可以通过添加注释来引导Copilot生成相关代码
 
 <div class="video-flex">
-<iframe width="300" height="315" src="/pubilc/video1.mp4" frameborder="0" allowfullscreen ></iframe>
-<iframe width="300" height="315" src="/pubilc/video2.mp4" frameborder="0" allowfullscreen ></iframe>
+<iframe width="300" height="315" src="https://dx2-5g7ghhrr0afe4de1-1309749022.tcloudbaseapp.com/slidev/video1.mp4" frameborder="0" allowfullscreen ></iframe>
+<iframe width="300" height="315" src="https://dx2-5g7ghhrr0afe4de1-1309749022.tcloudbaseapp.com/slidev/video2.mp4" frameborder="0" allowfullscreen ></iframe>
 </div>
 
 <style>
@@ -231,7 +231,7 @@ Copilot可以结合当前项目上下文，编写时会提前帮你 **预测** �
 通过Copilot自动结合上下文生成相关规范代码，也可以通过添加注释来引导Copilot生成相关代码
 
 
-<iframe width="520" height="315" src="/pubilc/video3.mp4" frameborder="0" allowfullscreen class="m-auto"></iframe>
+<iframe width="520" height="315" src="https://dx2-5g7ghhrr0afe4de1-1309749022.tcloudbaseapp.com/slidev/video3.mp4" frameborder="0" allowfullscreen class="m-auto"></iframe>
 
 ---
 layout: two-cols
@@ -255,7 +255,7 @@ transition: slide-up
 
 ::right::
 
-<img src="/pubilc/img1.png" class="m-15 mt-35">
+<img src="/img1.png" class="m-15 mt-35">
 
 ---
 layout: two-cols
@@ -274,7 +274,7 @@ transition: slide-up
 
 ::right::
 
-<img src="/pubilc/img2.png" class="m-15 mt-15">
+<img src="/img2.png" class="m-15 mt-15">
 
 ---
 layout: two-cols
@@ -293,7 +293,7 @@ transition: slide-up
 
 ::right::
 
-<img src="/pubilc/img3.png" class="m-15 mt-15">
+<img src="/img3.png" class="m-15 mt-15">
 
 ---
 layout: two-cols
@@ -312,7 +312,7 @@ transition: slide-up
 
 ::right::
 
-<img src="/pubilc/img4.png" class="m-15 mt-15">
+<img src="/img4.png" class="m-15 mt-15">
 
 ---
 src: ./pages/end-page.md
