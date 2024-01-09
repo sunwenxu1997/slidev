@@ -196,5 +196,117 @@ Copilot可以结合当前项目上下文，编写时会提前帮你 **预测** �
 
 
 ---
+
+# 构建后端API接口
+
+示例背景：创建用户相关的API接口，比如查询、添加、修改和删除信息等。（本示例使用架构为Spring Boot + Mybatis Plus）
+
+通过Copilot自动结合上下文生成相关规范代码，也可以通过添加注释来引导Copilot生成相关代码
+
+<div class="video-flex">
+<iframe width="300" height="315" src="/pubilc/video1.mp4" frameborder="0" allowfullscreen ></iframe>
+<iframe width="300" height="315" src="/pubilc/video2.mp4" frameborder="0" allowfullscreen ></iframe>
+</div>
+
+<style>
+  .video-flex{
+    display: flex;
+    justify-content: space-around;
+  }
+</style>
+
+---
+
+# 辅助编写并优化数据库查询
+
+示例背景：根据指定的注释描述来生成对应的 SQL 语句（本示例使用架构为Spring Boot + Mybatis Plus）
+
+通过Copilot自动结合上下文生成相关规范代码，也可以通过添加注释来引导Copilot生成相关代码
+
+
+<iframe width="520" height="315" src="/pubilc/video3.mp4" frameborder="0" allowfullscreen class="m-auto"></iframe>
+
+---
+layout: two-cols
+transition: slide-up
+---
+
+# 提升开发效率和策略
+##
+
+主要体现在以下四点:
+
+**1.进行快速的原型开发**
+
+描述：GitHub Copilot可以在前期开发快速的构建原型，特别是在开发新功能和探索新技术的时候。
+
+情景：假设你正在开发一个新的RESTFUL API，正常来说你需要手动编写许多标准代码，比如实体、处理函数等。
+
+使用Copilot的提升：只需要输入函数的基本描述，Copilot就可以自动生成绝大多数标准代码。
+
+例如：输入“创建一个GET请求函数，用于返回所有用户数据”，Copilot就会自动完成一个标准的查询函数。
+
+::right::
+
+<img src="/pubilc/img1.png" class="m-15 mt-35">
+
+---
+layout: two-cols
+transition: slide-up
+---
+
+# 提升开发效率和策略
+## 
+**2.减少查找代码片段的时间**
+
+描述：利用Copilot减少搜索和参考外部代码片段的时间，尤其是处理常见的编码问题。
+
+情景：编写数据排序逻辑。
+
+使用Copilot的提升：在编写排序逻辑时，Copilot会根据你的代码上下文提供排序算法的实现代码，减少外部搜索时间。
+
+::right::
+
+<img src="/pubilc/img2.png" class="m-15 mt-15">
+
+---
+layout: two-cols
+transition: slide-up
+---
+
+# 提升开发效率和策略
+## 
+**3. 作为学习工具来使用**
+
+描述：Copilot不仅能提供代码建议，还能作为学习新技术和编程规范的工具。
+
+情景：学习如何在Java中使用新技术。
+
+使用Copilot的提升：在编写与新技术相关代码时，Copilot会自动实现对应的示例代码，帮助我们理解基本概念和实现方法。
+
+::right::
+
+<img src="/pubilc/img3.png" class="m-15 mt-15">
+
+---
+layout: two-cols
+transition: slide-up
+---
+
+# 提升开发效率和策略
+## 
+**4. 代码审查及优化**
+
+描述：使用Copilot检查现有代码，提供重构和优化的建议。
+
+情景：优化现有的复杂函数，提高其执行效率和可读性。
+
+使用Copilot的提升：在复杂的函数代码下添加注释，如“优化上面这个函数”，Copilot提供了重构建议，比如使用更高效的算法或简化逻辑结构来提升代码执行效率。
+
+::right::
+
+<img src="/pubilc/img4.png" class="m-15 mt-15">
+
+---
 src: ./pages/end-page.md
 ---
