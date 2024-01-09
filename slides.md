@@ -3,7 +3,7 @@
 theme: default
 # 首页背景图片
 # 提供的精美壁纸 https://source.unsplash.com/collection/94734566/1920x1080
-# background: /pubilc/page1.jpg
+# background: /page1.jpg
 class: content-end text-left
 highlighter: shiki
 lineNumbers: false
@@ -29,7 +29,7 @@ Document presentation report
 
 <style>
 .slidev-layout.slidev-page-1 {
-  background-image:url("/pubilc/page1.jpg") !important;
+  background-image:url("/page1.jpg") !important;
   color: #5a5a5a !important;
 }
 p{
